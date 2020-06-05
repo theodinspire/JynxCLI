@@ -15,7 +15,7 @@ public struct Purse {
 	public var silver:   Int = 0
 	public var copper:   Int = 0
 	
-	
+	// MARK: Init
 	public init(platinum: Int = 0, gold: Int = 0, electrum: Int = 0, silver: Int = 0, copper: Int = 0) {
 		self.init(gold: gold, electrum: electrum, silver: silver, copper: copper)
 		self.platinum = platinum
@@ -43,10 +43,9 @@ public struct Purse {
 	public var value: Int {
 		return copper + silver * 10 + electrum * 50 + gold * 100 + platinum * 1_000
 	}
-}
-
-public extension Purse {
-	static func +(_ this: Purse, _ that: Purse) -> Purse {
+	
+	// MARK: Addition
+	public static func +(_ this: Purse, _ that: Purse) -> Purse {
 		return Purse(
 			platinum: this.platinum + that.platinum,
 			gold: this.gold + that.gold,
@@ -55,7 +54,13 @@ public extension Purse {
 			copper: this.copper + that.copper)
 	}
 	
-	static func +=(_ this: inout Purse, _ that: Purse) {
+	public static func +=(_ this: inout Purse, _ that: Purse) {
 		this = this + that
 	}
+	
+	// MARK: Scalar Multiplication
+	public static func *(_ scalar: Int, _ amount: Purse) -> Purse {
+		return Purse()
+	}
+	
 }

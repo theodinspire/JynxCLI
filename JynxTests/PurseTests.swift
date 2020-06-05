@@ -52,7 +52,7 @@ class PurseTests: XCTestCase {
 		XCTAssertEqual(sut.value, platina * platinumValue)
 	}
 	
-	// Addition
+	// MARK: Addition
 	func testAddingRetainsValue() throws {
 		let this = Purse(platinum: 1, gold: 2, electrum: 3, silver: 4, copper: 5)
 		let that = Purse(platinum: 9, gold: 8, electrum: 7, silver: 6, copper: 5)
@@ -72,4 +72,5 @@ class PurseTests: XCTestCase {
 		XCTAssertEqual(sum.value, this.value + that.value)
 	}
 
+	// MARK: Scalar Multiplication
 }

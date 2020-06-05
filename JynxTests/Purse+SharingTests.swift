@@ -50,4 +50,18 @@ class Purse_SharingTests: XCTestCase {
 		XCTAssertGreaterThan(spoils[alpha]?.value ?? 0, 0)
 	}
 
+	func testDividePlusTheCatReturnsSameValueAsInput() {
+		// Arrange
+		let alpha = "Alpha"
+		let party: Set<String> = [alpha, "Bravo", "Charlie"]
+		let purse = Purse(platinum: 4, gold: 4, electrum: 4, silver: 4, copper: 4)
+
+		// Act
+		let spoils = purse.divide(among: party, using: .EqualPlusTheCat)
+		let spoilValue = spoils.values.reduce(0) { $0 + $1.value }
+
+		// Assert
+		XCTAssertEqual(spoilValue, purse.value)
+	}
+
 }

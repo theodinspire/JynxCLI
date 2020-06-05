@@ -16,6 +16,8 @@
 		A029E823248ACF76001538E8 /* ShareStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E822248ACF76001538E8 /* ShareStrategy.swift */; };
 		A029E825248AD00D001538E8 /* Purse+Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E824248AD00D001538E8 /* Purse+Sharing.swift */; };
 		A029E827248AD366001538E8 /* Purse+SharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E826248AD366001538E8 /* Purse+SharingTests.swift */; };
+		A029E829248ADCCC001538E8 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E828248ADCCC001538E8 /* Coins.swift */; };
+		A029E82D248ADD4D001538E8 /* CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E82C248ADD4D001538E8 /* CoinTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A029E822248ACF76001538E8 /* ShareStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStrategy.swift; sourceTree = "<group>"; };
 		A029E824248AD00D001538E8 /* Purse+Sharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purse+Sharing.swift"; sourceTree = "<group>"; };
 		A029E826248AD366001538E8 /* Purse+SharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purse+SharingTests.swift"; sourceTree = "<group>"; };
+		A029E828248ADCCC001538E8 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		A029E82C248ADD4D001538E8 /* CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				A029E81B248AC4B0001538E8 /* Purse.swift */,
 				A029E822248ACF76001538E8 /* ShareStrategy.swift */,
 				A029E824248AD00D001538E8 /* Purse+Sharing.swift */,
+				A029E828248ADCCC001538E8 /* Coins.swift */,
 			);
 			path = Jynx;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				A029E81E248AC50B001538E8 /* PurseTests.swift */,
 				A029E81D248AC50B001538E8 /* JynxTests-Bridging-Header.h */,
 				A029E826248AD366001538E8 /* Purse+SharingTests.swift */,
+				A029E82C248ADD4D001538E8 /* CoinTests.swift */,
 			);
 			path = JynxTests;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			files = (
 				A029E825248AD00D001538E8 /* Purse+Sharing.swift in Sources */,
 				A029E823248ACF76001538E8 /* ShareStrategy.swift in Sources */,
+				A029E829248ADCCC001538E8 /* Coins.swift in Sources */,
 				A029E81C248AC4B0001538E8 /* Purse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			files = (
 				A029E827248AD366001538E8 /* Purse+SharingTests.swift in Sources */,
 				A029E821248AC54B001538E8 /* JynxTests.swift in Sources */,
+				A029E82D248ADD4D001538E8 /* CoinTests.swift in Sources */,
 				A029E81F248AC50B001538E8 /* PurseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
