@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		A029E7D0248AC220001538E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E7CF248AC220001538E8 /* main.swift */; };
 		A029E80D248AC3B3001538E8 /* Jynx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A029E804248AC3B3001538E8 /* Jynx.framework */; };
-		A029E812248AC3B3001538E8 /* JynxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E811248AC3B3001538E8 /* JynxTests.swift */; };
 		A029E814248AC3B3001538E8 /* Jynx.h in Headers */ = {isa = PBXBuildFile; fileRef = A029E806248AC3B3001538E8 /* Jynx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A029E81C248AC4B0001538E8 /* Purse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E81B248AC4B0001538E8 /* Purse.swift */; };
+		A029E81F248AC50B001538E8 /* PurseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E81E248AC50B001538E8 /* PurseTests.swift */; };
+		A029E821248AC54B001538E8 /* JynxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E820248AC54B001538E8 /* JynxTests.swift */; };
+		A029E823248ACF76001538E8 /* ShareStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E822248ACF76001538E8 /* ShareStrategy.swift */; };
+		A029E825248AD00D001538E8 /* Purse+Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E824248AD00D001538E8 /* Purse+Sharing.swift */; };
+		A029E827248AD366001538E8 /* Purse+SharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E826248AD366001538E8 /* Purse+SharingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +47,14 @@
 		A029E806248AC3B3001538E8 /* Jynx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jynx.h; sourceTree = "<group>"; };
 		A029E807248AC3B3001538E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A029E80C248AC3B3001538E8 /* JynxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JynxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A029E811248AC3B3001538E8 /* JynxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JynxTests.swift; sourceTree = "<group>"; };
 		A029E813248AC3B3001538E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A029E81B248AC4B0001538E8 /* Purse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purse.swift; sourceTree = "<group>"; };
+		A029E81D248AC50B001538E8 /* JynxTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JynxTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A029E81E248AC50B001538E8 /* PurseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurseTests.swift; sourceTree = "<group>"; };
+		A029E820248AC54B001538E8 /* JynxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JynxTests.swift; sourceTree = "<group>"; };
+		A029E822248ACF76001538E8 /* ShareStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStrategy.swift; sourceTree = "<group>"; };
+		A029E824248AD00D001538E8 /* Purse+Sharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purse+Sharing.swift"; sourceTree = "<group>"; };
+		A029E826248AD366001538E8 /* Purse+SharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purse+SharingTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,9 @@
 			children = (
 				A029E806248AC3B3001538E8 /* Jynx.h */,
 				A029E807248AC3B3001538E8 /* Info.plist */,
+				A029E81B248AC4B0001538E8 /* Purse.swift */,
+				A029E822248ACF76001538E8 /* ShareStrategy.swift */,
+				A029E824248AD00D001538E8 /* Purse+Sharing.swift */,
 			);
 			path = Jynx;
 			sourceTree = "<group>";
@@ -112,8 +126,11 @@
 		A029E810248AC3B3001538E8 /* JynxTests */ = {
 			isa = PBXGroup;
 			children = (
-				A029E811248AC3B3001538E8 /* JynxTests.swift */,
+				A029E820248AC54B001538E8 /* JynxTests.swift */,
 				A029E813248AC3B3001538E8 /* Info.plist */,
+				A029E81E248AC50B001538E8 /* PurseTests.swift */,
+				A029E81D248AC50B001538E8 /* JynxTests-Bridging-Header.h */,
+				A029E826248AD366001538E8 /* Purse+SharingTests.swift */,
 			);
 			path = JynxTests;
 			sourceTree = "<group>";
@@ -200,9 +217,11 @@
 					};
 					A029E803248AC3B3001538E8 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					A029E80B248AC3B3001538E8 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -256,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A029E825248AD00D001538E8 /* Purse+Sharing.swift in Sources */,
+				A029E823248ACF76001538E8 /* ShareStrategy.swift in Sources */,
+				A029E81C248AC4B0001538E8 /* Purse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A029E812248AC3B3001538E8 /* JynxTests.swift in Sources */,
+				A029E827248AD366001538E8 /* Purse+SharingTests.swift in Sources */,
+				A029E821248AC54B001538E8 /* JynxTests.swift in Sources */,
+				A029E81F248AC50B001538E8 /* PurseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +440,7 @@
 		A029E816248AC3B3001538E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -434,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.Jynx;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -443,6 +469,7 @@
 		A029E817248AC3B3001538E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -470,6 +497,8 @@
 		A029E819248AC3B3001538E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MP2C6DY4C6;
@@ -481,6 +510,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.JynxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JynxTests/JynxTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -488,6 +519,8 @@
 		A029E81A248AC3B3001538E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MP2C6DY4C6;
@@ -499,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.JynxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JynxTests/JynxTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
