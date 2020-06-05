@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A029E7D0248AC220001538E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E7CF248AC220001538E8 /* main.swift */; };
+		A029E80D248AC3B3001538E8 /* Jynx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A029E804248AC3B3001538E8 /* Jynx.framework */; };
+		A029E812248AC3B3001538E8 /* JynxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029E811248AC3B3001538E8 /* JynxTests.swift */; };
+		A029E814248AC3B3001538E8 /* Jynx.h in Headers */ = {isa = PBXBuildFile; fileRef = A029E806248AC3B3001538E8 /* Jynx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A029E80E248AC3B3001538E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A029E7C4248AC220001538E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A029E803248AC3B3001538E8;
+			remoteInfo = Jynx;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A029E7CA248AC220001538E8 /* CopyFiles */ = {
@@ -25,6 +38,12 @@
 /* Begin PBXFileReference section */
 		A029E7CC248AC220001538E8 /* JynxCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JynxCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		A029E7CF248AC220001538E8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A029E804248AC3B3001538E8 /* Jynx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jynx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A029E806248AC3B3001538E8 /* Jynx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jynx.h; sourceTree = "<group>"; };
+		A029E807248AC3B3001538E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A029E80C248AC3B3001538E8 /* JynxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JynxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A029E811248AC3B3001538E8 /* JynxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JynxTests.swift; sourceTree = "<group>"; };
+		A029E813248AC3B3001538E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A029E801248AC3B3001538E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029E809248AC3B3001538E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029E80D248AC3B3001538E8 /* Jynx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				A029E7CE248AC220001538E8 /* JynxCLI */,
+				A029E805248AC3B3001538E8 /* Jynx */,
+				A029E810248AC3B3001538E8 /* JynxTests */,
 				A029E7CD248AC220001538E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				A029E7CC248AC220001538E8 /* JynxCLI */,
+				A029E804248AC3B3001538E8 /* Jynx.framework */,
+				A029E80C248AC3B3001538E8 /* JynxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +100,36 @@
 			path = JynxCLI;
 			sourceTree = "<group>";
 		};
+		A029E805248AC3B3001538E8 /* Jynx */ = {
+			isa = PBXGroup;
+			children = (
+				A029E806248AC3B3001538E8 /* Jynx.h */,
+				A029E807248AC3B3001538E8 /* Info.plist */,
+			);
+			path = Jynx;
+			sourceTree = "<group>";
+		};
+		A029E810248AC3B3001538E8 /* JynxTests */ = {
+			isa = PBXGroup;
+			children = (
+				A029E811248AC3B3001538E8 /* JynxTests.swift */,
+				A029E813248AC3B3001538E8 /* Info.plist */,
+			);
+			path = JynxTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A029E7FF248AC3B3001538E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029E814248AC3B3001538E8 /* Jynx.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A029E7CB248AC220001538E8 /* JynxCLI */ = {
@@ -82,6 +149,42 @@
 			productReference = A029E7CC248AC220001538E8 /* JynxCLI */;
 			productType = "com.apple.product-type.tool";
 		};
+		A029E803248AC3B3001538E8 /* Jynx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A029E815248AC3B3001538E8 /* Build configuration list for PBXNativeTarget "Jynx" */;
+			buildPhases = (
+				A029E7FF248AC3B3001538E8 /* Headers */,
+				A029E800248AC3B3001538E8 /* Sources */,
+				A029E801248AC3B3001538E8 /* Frameworks */,
+				A029E802248AC3B3001538E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jynx;
+			productName = Jynx;
+			productReference = A029E804248AC3B3001538E8 /* Jynx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A029E80B248AC3B3001538E8 /* JynxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A029E818248AC3B3001538E8 /* Build configuration list for PBXNativeTarget "JynxTests" */;
+			buildPhases = (
+				A029E808248AC3B3001538E8 /* Sources */,
+				A029E809248AC3B3001538E8 /* Frameworks */,
+				A029E80A248AC3B3001538E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A029E80F248AC3B3001538E8 /* PBXTargetDependency */,
+			);
+			name = JynxTests;
+			productName = JynxTests;
+			productReference = A029E80C248AC3B3001538E8 /* JynxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +196,12 @@
 				ORGANIZATIONNAME = "Eric T Cormack";
 				TargetAttributes = {
 					A029E7CB248AC220001538E8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A029E803248AC3B3001538E8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A029E80B248AC3B3001538E8 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -111,9 +220,28 @@
 			projectRoot = "";
 			targets = (
 				A029E7CB248AC220001538E8 /* JynxCLI */,
+				A029E803248AC3B3001538E8 /* Jynx */,
+				A029E80B248AC3B3001538E8 /* JynxTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A029E802248AC3B3001538E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029E80A248AC3B3001538E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A029E7C8248AC220001538E8 /* Sources */ = {
@@ -124,7 +252,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A029E800248AC3B3001538E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029E808248AC3B3001538E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029E812248AC3B3001538E8 /* JynxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A029E80F248AC3B3001538E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A029E803248AC3B3001538E8 /* Jynx */;
+			targetProxy = A029E80E248AC3B3001538E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A029E7D1248AC220001538E8 /* Debug */ = {
@@ -262,6 +413,96 @@
 			};
 			name = Release;
 		};
+		A029E816248AC3B3001538E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Jynx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.Jynx;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A029E817248AC3B3001538E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Jynx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.Jynx;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A029E819248AC3B3001538E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				INFOPLIST_FILE = JynxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.JynxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A029E81A248AC3B3001538E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				INFOPLIST_FILE = JynxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = theodinspire.JynxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +520,24 @@
 			buildConfigurations = (
 				A029E7D4248AC220001538E8 /* Debug */,
 				A029E7D5248AC220001538E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A029E815248AC3B3001538E8 /* Build configuration list for PBXNativeTarget "Jynx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A029E816248AC3B3001538E8 /* Debug */,
+				A029E817248AC3B3001538E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A029E818248AC3B3001538E8 /* Build configuration list for PBXNativeTarget "JynxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A029E819248AC3B3001538E8 /* Debug */,
+				A029E81A248AC3B3001538E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
