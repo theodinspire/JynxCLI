@@ -118,11 +118,10 @@
 		A029E805248AC3B3001538E8 /* Jynx */ = {
 			isa = PBXGroup;
 			children = (
+				A04A9A1A249C53BD00E4FF6C /* Purses */,
+				A04A9A19249C53A900E4FF6C /* Enum */,
 				A029E806248AC3B3001538E8 /* Jynx.h */,
 				A029E807248AC3B3001538E8 /* Info.plist */,
-				A029E81B248AC4B0001538E8 /* Purse.swift */,
-				A029E822248ACF76001538E8 /* ShareStrategy.swift */,
-				A029E824248AD00D001538E8 /* Purse+Sharing.swift */,
 				A029E828248ADCCC001538E8 /* Coins.swift */,
 			);
 			path = Jynx;
@@ -139,6 +138,23 @@
 				A029E82C248ADD4D001538E8 /* CoinTests.swift */,
 			);
 			path = JynxTests;
+			sourceTree = "<group>";
+		};
+		A04A9A19249C53A900E4FF6C /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A029E822248ACF76001538E8 /* ShareStrategy.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		A04A9A1A249C53BD00E4FF6C /* Purses */ = {
+			isa = PBXGroup;
+			children = (
+				A029E81B248AC4B0001538E8 /* Purse.swift */,
+				A029E824248AD00D001538E8 /* Purse+Sharing.swift */,
+			);
+			path = Purses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

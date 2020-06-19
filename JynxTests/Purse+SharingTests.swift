@@ -32,9 +32,9 @@ class Purse_SharingTests: XCTestCase {
 		let spoils = purse.divide(among: party, using: .EqualPlusTheCat)
 		
 		// Assert
-		let targets = spoils.filter({ party.contains($0.key) }).values.map({ $0.value })
+		let targets = spoils.filter{ party.contains($0.key) }.values.map{ $0.value }
 		
-		XCTAssert(targets.allSatisfy({ $0 == targets[0] }))
+		XCTAssert(targets.allSatisfy { $0 == targets[0] })
 	}
 	
 	func testDividePlusTheCatGivesValue() {
@@ -52,8 +52,7 @@ class Purse_SharingTests: XCTestCase {
 
 	func testDividePlusTheCatReturnsSameValueAsInput() {
 		// Arrange
-		let alpha = "Alpha"
-		let party: Set<String> = [alpha, "Bravo", "Charlie"]
+		let party: Set<String> = ["Alpha", "Bravo", "Charlie"]
 		let purse = Purse(platinum: 4, gold: 4, electrum: 4, silver: 4, copper: 4)
 
 		// Act
@@ -64,4 +63,18 @@ class Purse_SharingTests: XCTestCase {
 		XCTAssertEqual(spoilValue, purse.value)
 	}
 
+	func testDividePlusTheCatReturnsPursesOfEqualValueForAKnownDivisiblePrize() {
+		// Arrange
+		let party: Set<String> = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"]
+		let purse = Purse(platinum: 1, gold: 1, electrum: 1, silver: 1, copper: 2) // Value 1162, should be 166
+
+		// Act
+		let spoils = purse.divide(among: party, using: .EqualPlusTheCat)
+
+		// Assert
+		let values = Set(spoils.values.map { $0.value })
+
+		XCTAssertEqual(values.count, 1)
+		XCTAssertEqual(values.first ?? 0, 166)
+	}
 }
